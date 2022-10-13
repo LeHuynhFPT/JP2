@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Book">
+    <children>
+        <Button layoutX="95.0" layoutY="52.0" mnemonicParsing="false" onAction="#btnBack" text="&lt;&lt;BackHome" />
+        <Button layoutX="441.0" layoutY="52.0" mnemonicParsing="false" onAction="#btnAdd" text="AddBook&gt;&gt;" />
+        <TableView layoutX="95.0" layoutY="117.0" prefHeight="200.0" prefWidth="428.0">
+            <columns>
+                <TableColumn fx:id="idBook" prefWidth="75.0" text="Mã sách" />
+                <TableColumn fx:id="bookName" prefWidth="138.0" text="Tên sách" />
+                <TableColumn fx:id="athor" prefWidth="148.0" text="Tác giả" />
+                <TableColumn fx:id="publish" minWidth="0.0" prefWidth="66.0" text="Năm xb" />
+            </columns>
+        </TableView>
+    </children>
+</Pane>
